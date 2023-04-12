@@ -19,7 +19,7 @@ module.exports = merge(commonConfig, {
       filename: "[name].[contenthash].css",
     }),
   ],
-  optimization: {
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
-  },
+  // optimization: {
+  //   minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+  // },
 });
