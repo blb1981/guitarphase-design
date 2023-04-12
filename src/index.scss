@@ -1,6 +1,14 @@
-$bg: #2e2e2e;
+$enable-rounded: false;
+$success: #499231;
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-body {
-  background-color: $bg;
-  color: white;
+
+
+.gp-register-form {
+  max-width: 35rem;
+}
+
+.gp-logo-font {
+  font-family: 'Changa', sans-serif;
+  color: $success;
 }

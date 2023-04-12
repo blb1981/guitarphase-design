@@ -15,8 +15,13 @@ module.exports = {
     // Another instance of the HtmlWebpackPlugin would be necessary for more views
     new HtmlWebpackPlugin({
       filename: "index.html",
-      inject: true,
+      inject: "body",
       template: path.resolve(__dirname, "src", "index.ejs"),
+    }),
+    new HtmlWebpackPlugin({
+      filename: "register.html",
+      inject: "body",
+      template: path.resolve(__dirname, "src", "register.ejs"),
     }),
   ],
   module: {
