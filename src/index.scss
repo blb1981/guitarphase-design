@@ -2,13 +2,15 @@ $enable-rounded: false;
 $success: #499231;
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-
+.gp-logo-font {
+  font-family: 'Changa', sans-serif;
+  color: $success;
+}
 
 .gp-register-form {
   max-width: 35rem;
 }
 
-.gp-logo-font {
-  font-family: 'Changa', sans-serif;
-  color: $success;
+.gp-login-form {
+  max-width: 25rem;
 }
