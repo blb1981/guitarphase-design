@@ -1,10 +1,24 @@
 $enable-rounded: false;
 $success: #499231;
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$padding-under-topnav: 5rem;
+$sidenav-width: 250px;
+
+$navbar-brand-font-size: 1.75rem;
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.gp-100-body-height {
+  height: 100vh;
+}
 
 .gp-logo-font {
-  font-family: 'Changa', sans-serif;
+  font-family: "Changa", sans-serif;
   color: $success;
+}
+
+.gp-logo-navbar {
+  font-family: "Changa", sans-serif;
 }
 
 .gp-register-form {
@@ -13,4 +27,41 @@ $success: #499231;
 
 .gp-login-form {
   max-width: 25rem;
+}
+
+.gp-topnav {
+  z-index: 1;
+}
+
+.gp-sidenav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $sidenav-width;
+  overflow-y: auto;
+  padding: $padding-under-topnav 1rem 1rem 1rem;
+}
+
+@include media-breakpoint-down(md) {
+  .gp-sidenav {
+    display: none;
+  }
+}
+
+.gp-main-content {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: $sidenav-width;
+  overflow-y: auto;
+  // padding-top: $padding-under-topnav;
+  padding: $padding-under-topnav 1rem 1rem 1rem;
+  padding-left: 20px;
+}
+
+@include media-breakpoint-down(md) {
+  .gp-main-content {
+    padding-left: 1rem;
+  }
 }

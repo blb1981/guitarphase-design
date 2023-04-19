@@ -28,6 +28,11 @@ module.exports = {
       inject: "body",
       template: path.resolve(__dirname, "src", "login.ejs"),
     }),
+    new HtmlWebpackPlugin({
+      filename: "dashboard.html",
+      inject: "body",
+      template: path.resolve(__dirname, "src", "dashboard.ejs"),
+    }),
   ],
   module: {
     rules: [{ test: /\.ejs/i, use: ["html-loader", "template-ejs-loader"] }],

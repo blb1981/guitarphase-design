@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600&display=swap" rel="stylesheet" />
+    <title>Dashboard</title>
+  </head>
+  <body class="gp-100-body-height">
+    <!-- Top nav -->
+    <nav class="gp-topnav navbar navbar-expand-sm fixed-top bg-dark border-bottom" data-bs-theme="dark">
+      <div class="container-fluid d-flex align-items-center py-0">
+        <!-- Logo -->
+        <a class="navbar-brand link-success gp-logo-navbar" href="#">GuitarPhase</a>
+        <!-- End Logo -->
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNav" aria-controls="topNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End Toggler -->
+
+        <!-- Collapsable content -->
+        <div id="topNav" class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-sm-auto align-items-center">
+            <span class="navbar-text me-3">Hello Brandon!</span>
+
+            <!-- Avatar dropdown -->
+            <div class="dropdown text-light align-self-center">
+              <a href="#" class="dropdown-toggle link-light text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="./images/blank-profile.png" height="32" width="32" alt="" class="rounded-circle" />
+              </a>
+              <ul class="dropdown-menu dropdown-menu-sm-end navbar-nav-scroll">
+                <li><a href="/account" class="dropdown-item">My Account</a></li>
+                <li><a href="/settings" class="dropdown-item">Settings</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a href="#" class="dropdown-item">Sign Out</a></li>
+                <form id="logout-form" action="/logout" method="POST" style="display: none">@csrf</form>
+              </ul>
+            </div>
+            <!-- End Avatar dropdown -->
+          </ul>
+        </div>
+        <!-- End Collapsable content -->
+      </div>
+    </nav>
+    <!-- End Top nav -->
+
+    <!-- Sidenav -->
+    <div class="gp-sidenav bg-dark text-light border-end">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus, dolorum cum ipsum facilis harum facere inventore odit maiores porro repellat quidem sint illo?
+        Temporibus magni incidunt cum rem adipisci saepe earum fuga mollitia voluptatibus debitis, reprehenderit rerum facilis sed quas ipsum! Inventore quod porro debitis, fugit
+        odit illum iste.
+      </p>
+      <!-- <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus, dolorum cum ipsum facilis harum facere inventore odit maiores porro repellat quidem sint illo?
+        Temporibus magni incidunt cum rem adipisci saepe earum fuga mollitia voluptatibus debitis, reprehenderit rerum facilis sed quas ipsum! Inventore quod porro debitis, fugit
+        odit illum iste.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus, dolorum cum ipsum facilis harum facere inventore odit maiores porro repellat quidem sint illo?
+        Temporibus magni incidunt cum rem adipisci saepe earum fuga mollitia voluptatibus debitis, reprehenderit rerum facilis sed quas ipsum! Inventore quod porro debitis, fugit
+        odit illum iste.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque doloribus, dolorum cum ipsum facilis harum facere inventore odit maiores porro repellat quidem sint illo?
+        Temporibus magni incidunt cum rem adipisci saepe earum fuga mollitia voluptatibus debitis, reprehenderit rerum facilis sed quas ipsum! Inventore quod porro debitis, fugit
+        odit illum iste.
+      </p> -->
+    </div>
+    <!-- End Sidenav -->
+
+    <!-- Main content -->
+    <main class="gp-main-content">
+      <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, iste?</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis fugiat mollitia tempora nemo. Numquam dicta maxime sint ipsa natus tempora corporis nesciunt
+        explicabo, et saepe fugit vel nostrum unde nisi.
+      </p>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa quisquam nisi quibusdam excepturi incidunt magnam pariatur hic labore, adipisci aliquid.</p>
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+    </main>
+    <!-- End Main content -->
+  </body>
+</html>
