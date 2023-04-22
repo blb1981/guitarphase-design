@@ -1,8 +1,8 @@
 $enable-rounded: false;
 $success: #499231;
 
-$padding-under-topnav: 5rem;
-$sidenav-width: 250px;
+$padding-under-topnav: 6rem;
+$sidenav-width: 200px;
 
 $navbar-brand-font-size: 1.75rem;
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
@@ -17,7 +17,7 @@ $navbar-brand-font-size: 1.75rem;
   color: $success;
 }
 
-.gp-logo-navbar {
+.gp-brand-navbar {
   font-family: "Changa", sans-serif;
 }
 
@@ -27,6 +27,13 @@ $navbar-brand-font-size: 1.75rem;
 
 .gp-login-form {
   max-width: 25rem;
+}
+// -------------------------- //
+.gp-topnav,
+.gp-sidenav {
+  i {
+    margin-right: 0.5rem;
+  }
 }
 
 .gp-topnav {
@@ -40,13 +47,8 @@ $navbar-brand-font-size: 1.75rem;
   left: 0;
   width: $sidenav-width;
   overflow-y: auto;
-  padding: $padding-under-topnav 1rem 1rem 1rem;
-}
-
-@include media-breakpoint-down(md) {
-  .gp-sidenav {
-    display: none;
-  }
+  padding-top: $padding-under-topnav;
+  z-index: 0;
 }
 
 .gp-main-content {
@@ -54,14 +56,18 @@ $navbar-brand-font-size: 1.75rem;
   top: 0;
   bottom: 0;
   left: $sidenav-width;
+  width: calc(100vw - $sidenav-width);
   overflow-y: auto;
-  // padding-top: $padding-under-topnav;
-  padding: $padding-under-topnav 1rem 1rem 1rem;
-  padding-left: 20px;
+  padding-top: $padding-under-topnav;
+  z-index: 0;
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
+  .gp-sidenav {
+    display: none;
+  }
   .gp-main-content {
-    padding-left: 1rem;
+    left: 0;
+    width: 100%;
   }
 }
