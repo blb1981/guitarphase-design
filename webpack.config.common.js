@@ -33,6 +33,11 @@ module.exports = {
       inject: "body",
       template: path.resolve(__dirname, "src", "dashboard.ejs"),
     }),
+    new HtmlWebpackPlugin({
+      filename: "quick.html",
+      inject: "body",
+      template: path.resolve(__dirname, "src", "quick.ejs"),
+    }),
   ],
   module: {
     rules: [{ test: /\.ejs/i, use: ["html-loader", "template-ejs-loader"] }],
