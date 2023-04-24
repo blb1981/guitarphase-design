@@ -2,7 +2,15 @@
 <%- include('partials/backend-header.ejs') %>
 
 <h1>Quick-Add a Project</h1>
-<!-- TODO: Create form here -->
+<form class="row align-items-end">
+  <div class="col-lg-4 mb-3">
+    <label for="projectTitle" class="label form-label">Project title</label>
+    <input type="text" class="form-control" id="projectTitle" placeholder="Eruption" />
+  </div>
+  <div class="col-lg-2">
+    <button type="submit" class="btn btn-success text-light">Add project</button>
+  </div>
+</form>
 
 <!-- prettier-ignore -->
 <%- include('partials/backend-footer.ejs') %>
