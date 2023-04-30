@@ -1,0 +1,12 @@
+Pages to complete still
+- Proejct add form
+X Single add
+- Project details
+- Profile
+- Account details
+- Settings
+- Homepage
+- About
+- Contact us
+- Report a tech issue
+
