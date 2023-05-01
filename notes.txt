@@ -16,6 +16,7 @@ Project - data points
 - Last Update
 - Song inspired by
 - Artist inspired by
+- Album/Recording inspired by
 - Type (comma separated)
 -- Chord progression
 -- Melody
