@@ -10,3 +10,25 @@ X Single add
 - Contact us
 - Report a tech issue
 
+Project - data points
+- Title
+- Target Completion Date
+- Last Update
+- Song inspired by
+- Artist inspired by
+- Type (comma separated)
+-- Chord progression
+-- Melody
+-- Solo
+-- Chord Melody
+-- Exercise
+Total Measures
+Target Tempo
+Show Public
+Parent Project
+
+Project Update - data points
+- Completed Measures
+- Current Tempo
+- Notes
+
