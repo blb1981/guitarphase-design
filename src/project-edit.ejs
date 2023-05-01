@@ -1,0 +1,112 @@
+<!-- prettier-ignore -->
+<%- include('partials/backend-header.ejs') %>
+
+<h1>Edit Project: Autumn Leaves fingerstyle</h1>
+
+<div class="row">
+  <div class="col-md-8">
+    <form class="my-3">
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label" for="projectTitle">Project Title</label>
+          <input type="text" class="form-control" id="projectTitle" placeholder="Autumn Leaves..." />
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-4 align-items-center">
+        <div class="col-md-4">
+          <label for="targetDate" class="form-label">Target Completion Date</label>
+        </div>
+        <div class="col-md-4">
+          <input type="date" class="form-control" id="targetDate" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label" for="songInspiration">Song Inspiration</label>
+          <input type="text" class="form-control" id="songInspiration" placeholder="Autumn Leaves" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label" for="artistInspiration">Artist Inspiration</label>
+          <input type="text" class="form-control" id="artistInspiration" placeholder="Joe Pass" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label" for="albumInspiration">Album/Recording Inspiration</label>
+          <input type="text" class="form-control" id="albumInspiration" placeholder="Virtuoso #4" />
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label class="form-label" for="projectType">Project Type: (separate by commas if multiple)</label>
+          <input type="text" class="form-control" id="projectType" placeholder="transcribed solo, melody" />
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-4 align-items-center">
+        <div class="col-md-3">
+          <label class="form-label" for="totalMeasures">Total Measures</label>
+        </div>
+        <div class="col-md-2 mb-3">
+          <input type="number" class="form-control" id="totalMeasures" min="1" max="300" />
+        </div>
+
+        <div class="offset-md-1 col-md-3">
+          <label class="form-label" for="completedMeasures">Completed Measures</label>
+        </div>
+        <div class="col-md-2 mb-3">
+          <input type="number" class="form-control" id="completedMeasures" min="1" max="300" />
+        </div>
+      </div>
+
+      <div class="row mb-3 mt-4 align-items-center">
+        <div class="col-md-3">
+          <label class="form-label" for="targetTempo">Target Tempo</label>
+        </div>
+        <div class="col-md-2 mb-3">
+          <input type="number" class="form-control" id="targetTempo" min="1" max="300" />
+        </div>
+
+        <div class="offset-md-1 col-md-3">
+          <label class="form-label" for="currentTempo">Current Tempo</label>
+        </div>
+        <div class="col-md-2 mb-3">
+          <input type="number" class="form-control" id="currentTempo" min="1" max="300" />
+        </div>
+      </div>
+
+      <div class="row my-4 ps-2">
+        <div class="col-12 form-check">
+          <input type="checkbox" class="form-check-input" id="showPublic" />
+          <label for="showPublic" class="form-check-label">Publicly Visible (show in your public profile page)</label>
+        </div>
+      </div>
+
+      <div class="row mb-3">
+        <div class="col-12">
+          <label for="parentProject" class="form-label">Parent Project (if applicable)</label>
+          <select name="parent_project" id="parentProject" class="form-select">
+            <option selected value="none">None</option>
+            <option value="proejct_id_here">Proejct One</option>
+            <option value="proejct_id_here">Proejct Two</option>
+            <option value="proejct_id_here">Proejct Three</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="my-5 d-grid gap-2 col-sm-4 me-auto">
+        <button class="btn btn-success text-light btn-lg" type="submit">Submit Changes</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- prettier-ignore -->
+<%- include('partials/backend-footer.ejs') %>

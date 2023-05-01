@@ -48,6 +48,11 @@ module.exports = {
       inject: "body",
       template: path.resolve(__dirname, "src", "project-detail.ejs"),
     }),
+    new HtmlWebpackPlugin({
+      filename: "project-edit.html",
+      inject: "body",
+      template: path.resolve(__dirname, "src", "project-edit.ejs"),
+    }),
   ],
   module: {
     rules: [{ test: /\.ejs/i, use: ["html-loader", "template-ejs-loader"] }],
