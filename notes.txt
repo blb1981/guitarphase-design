@@ -12,6 +12,7 @@ X Single add
 
 Project - data points
 - Title
+- Status
 - Target Completion Date
 - Last Update
 - Song inspired by

@@ -1,0 +1,64 @@
+<!-- prettier-ignore -->
+<%- include('partials/backend-header.ejs') %>
+
+<h1>
+  Edit Practice Entry:<br />
+  5/5/2023 - 4:10pm
+</h1>
+
+<form action="">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="practiceEntryTitle" class="form-label">Practice Entry Title - <small>(If left blank, will default to date & time)</small></label>
+      <input type="text" class="form-control" id="practiceEntryTitle" />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-2">
+      <label for="project" class="form-label">Project</label>
+    </div>
+    <div class="col-md-4">
+      <select name="proejct" id="project" class="form-select">
+        <option selected value="none">None</option>
+        <option value="proejct_id_here">Proejct One</option>
+        <option value="proejct_id_here">Proejct Two</option>
+        <option value="proejct_id_here">Proejct Three</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row mb-3 mt-4 align-items-center">
+    <div class="col-md-4">
+      <label class="form-label" for="completedMeasures">Completed Measures (Out of 32)</label>
+    </div>
+    <div class="col-md-2 mb-3">
+      <input type="number" class="form-control" id="completedMeasures" min="1" max="300" />
+    </div>
+  </div>
+
+  <div class="row mb-3 mt-4 align-items-center">
+    <div class="col-md-4">
+      <label class="form-label" for="currentTempo">Current Tempo</label>
+    </div>
+    <div class="col-md-2 mb-3">
+      <input type="number" class="form-control" id="currentTempo" min="1" max="300" />
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <label for="practiceEntryNotes">Notes:</label>
+      <textarea id="practiceEntryNotes" class="form-control"></textarea>
+    </div>
+  </div>
+
+  <div class="row my-5">
+    <div class="col-sm-4 d-grid">
+      <button type="submit" class="btn btn-success text-light">Save Changes</button>
+    </div>
+  </div>
+</form>
+
+<!-- prettier-ignore -->
+<%- include('partials/backend-footer.ejs') %>

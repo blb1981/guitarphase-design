@@ -1,0 +1,30 @@
+<!-- prettier-ignore -->
+<%- include('partials/backend-header.ejs') %>
+
+<h1>Settings</h1>
+<form>
+  <div class="row mb-3">
+    <div class="col-md-4 align-items-center mb-3"><strong>Current profile image:</strong></div>
+    <div class="col-md-6"><img class="rounded-circle" src="./images/cat-profile.jpg" alt="Profile picture" width="32" height="32" /></div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-md-6">
+      <label for="imageUpload" class="form-label">Update your profile image</label>
+      <input type="file" class="form-control" />
+    </div>
+  </div>
+
+  <div class="row mb-5 ms-1 form-check form-switch">
+    <label class="form-check-label" for="publicProfile">Make your <a href="/profile.html" target="_blank">profile page</a> visible to the public?</label>
+    <input class="form-check-input" type="checkbox" role="switch" id="publicProfile" />
+  </div>
+
+  <div class="row mb-5">
+    <div class="col-md-4">
+      <button class="btn btn-success text-light" type="submit">Save Changes</button>
+    </div>
+  </div>
+</form>
+
+<!-- prettier-ignore -->
+<%- include('partials/backend-footer.ejs') %>
