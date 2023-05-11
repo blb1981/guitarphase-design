@@ -2,6 +2,7 @@ $enable-rounded: false;
 $success: #499231;
 
 $padding-under-topnav: 6rem;
+$navbar-height: 74.8px;
 $sidenav-width: 200px;
 
 $navbar-brand-font-size: 1.75rem;
@@ -54,12 +55,12 @@ $navbar-brand-font-size: 1.75rem;
 
 .gp-main-content {
   position: fixed;
-  top: 0;
+  top: $navbar-height;
   bottom: 0;
   left: $sidenav-width;
   width: calc(100vw - $sidenav-width);
   overflow-y: auto;
-  padding-top: $padding-under-topnav;
+  padding-top: calc($padding-under-topnav - $navbar-height);
   z-index: 0;
 }
 
